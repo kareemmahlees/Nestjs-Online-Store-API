@@ -10,7 +10,7 @@ import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard } from '@nestjs/throttler/dist/throttler.guard';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './user/user.module';
-import { AbilityModule } from './ability/ability.module';
+// import { AbilityModule } from './ability/ability.module';
 import { ProductModule } from './product/product.module';
 import { PaymentModule } from './payment/payment.module';
 import { EventEmitterModule } from '@nestjs/event-emitter/dist/event-emitter.module';
