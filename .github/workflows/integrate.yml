@@ -4,6 +4,9 @@ on:
     pull_request:
         branches: [master]
 
+env:
+    JWT_SECRET: super_secret_string
+
 jobs:
     test_pull_request:
         runs-on: ubuntu-latest
