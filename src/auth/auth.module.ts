@@ -13,7 +13,7 @@ import { AuthEvents } from './events/auth.events';
     providers: [AuthService, LocalStrategy, JwtStrategy, AuthEvents],
     imports: [
         JwtModule.register({
-            secret: process.env.JWT_SECRET,
+            secret: 'very-secret-key',
             signOptions: { expiresIn: '60s' },
         }),
     ],
