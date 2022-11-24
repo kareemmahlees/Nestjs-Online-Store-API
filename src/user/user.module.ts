@@ -12,6 +12,6 @@ import { RolesGuard } from 'src/roles/roles.guard';
 @Module({
     controllers: [UserController],
     providers: [UserService, PrismaService, JwtGuard, RolesGuard],
-    imports: [AbilityModule],
+    // imports: [AbilityModule],
 })
 export class UserModule {}

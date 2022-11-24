@@ -16,11 +16,11 @@ import { UserService } from './user.service';
 import { CreateUserDto } from './dto';
 import { UpdateUserDto } from './dto';
 import { JwtGuard } from 'src/auth/guards/jwt.guard';
-import { AbilityFactory, Action } from 'src/ability/ability.factory';
+// import { AbilityFactory, Action } from 'src/ability/ability.factory';
 import { ForbiddenError } from '@casl/ability';
-import { AbilityGuard } from 'src/ability/guards/ability.guard';
-import { CheckAbilites } from 'src/ability/decorators/ability.decorator';
-import { AbilityFilter } from 'src/ability/ability.filter';
+// import { AbilityGuard } from 'src/ability/guards/ability.guard';
+// import { CheckAbilites } from 'src/ability/decorators/ability.decorator';
+// import { AbilityFilter } from 'src/ability/ability.filter';
 import { RolesGuard } from 'src/roles/roles.guard';
 import { Roles } from 'src/roles/roles.decorator';
 import { AssignedRoles } from 'src/roles/roles.enum';
@@ -30,8 +30,8 @@ import { AssignedRoles } from 'src/roles/roles.enum';
 export class UserController {
     constructor(
         private readonly userService: UserService,
-        private readonly abilityService: AbilityFactory,
-    ) {}
+    ) // private readonly abilityService: AbilityFactory,
+    {}
 
     @Get()
     // @UseFilters(AbilityFilter)

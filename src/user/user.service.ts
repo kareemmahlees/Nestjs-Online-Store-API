@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Prisma, User } from '@prisma/client';
-import { AbilityFactory } from 'src/ability/ability.factory';
+// import { AbilityFactory } from 'src/ability/ability.factory';
 import { PrismaService } from 'src/database/prisma.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
@@ -8,7 +8,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 @Injectable()
 export class UserService {
     constructor(
-        private readonly abilityFactory: AbilityFactory,
+        // private readonly abilityFactory: AbilityFactory,
         private readonly prismaService: PrismaService,
     ) {}
 

@@ -7,7 +7,7 @@ import { config } from 'dotenv';
 @Injectable()
 export class AuthEvents {
     constructor(private readonly configService: ConfigService) {
-        sgMail.setApiKey(configService.get('MAILER_API_KEY'));
+        // sgMail.setApiKey(configService.get('MAILER_API_KEY'));
     }
     private readonly logger = new Logger(AuthEvents.name);
 
